@@ -4,9 +4,8 @@ using UnityEngine;
 
 public enum ModeSizeCase
 {
-    Mode2x2 = 0,
-    Mode2x3 = 1,
-    Mode2x4 = 2,
-    Mode2x2x2 = 3,
-    Mode2x2x2x2 = 4
+    Mode2x2W2H2 = 0,
+    Mode2x2W2H3 = 1,
+    Mode2x2W2H4 = 2,
+    Mode2x2x2W2H2 = 3
 }

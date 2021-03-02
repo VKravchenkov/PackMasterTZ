@@ -5,15 +5,23 @@ using System.Linq;
 
 public class GeneratorCase : MonoBehaviour
 {
+    //??
+    public static GeneratorCase Instance { get; private set; }
+
     [SerializeField] private List<ConfigureCase> listConfigureCases;
 
     [SerializeField] private ConfigureCase currentSelectConfigureCase;
 
     public List<ConfigureCase> ListConfigureCases => listConfigureCases;
 
+    public ConfigureCase ConfigureCase => currentSelectConfigureCase;
+
     private void Awake()
     {
+        Instance = this;
+    
         LoadConfigureCases();
+
         ChangeCurrentConfigureCase();
 
         EventManager.Skip += ChangeCurrentConfigureCase;

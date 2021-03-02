@@ -17,7 +17,6 @@ public class MainModal : BaseView
     [SerializeField] private Image iconland;
     [SerializeField] private Image iconPeople;
 
-    //?
     [SerializeField] private GeneratorCase generatorCase;
 
     private int money;

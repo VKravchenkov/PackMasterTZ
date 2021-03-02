@@ -19,8 +19,6 @@ public class PackModal : BaseView
 
         Instance = this;
 
-        // OnClick
-
         Subscribe(buttonGo, () => EventManager.OnCheckSuitCaseFill());
         EventManager.ShowButtonGo += (isShow) => buttonGo.gameObject.SetActive(isShow);
         EventManager.OnShowButtonGo(false);
@@ -28,7 +26,7 @@ public class PackModal : BaseView
 
     protected void OnDestroy()
     {
-        UnSubscribe(buttonGo, () => EventManager.OnCheckSuitCaseFill());
+        //UnSubscribe(buttonGo, () => EventManager.OnCheckSuitCaseFill());
         EventManager.ShowButtonGo -= (isShow) => buttonGo.gameObject.SetActive(isShow);
     }
 }

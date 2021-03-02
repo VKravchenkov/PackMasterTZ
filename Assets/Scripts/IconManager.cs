@@ -24,7 +24,6 @@ public class IconManager : MonoBehaviour
         iconManager = this;
     }
 
-    //?
     public static Sprite GetRandomSprite1x1()
     {
         int rnd = Random.Range(0, iconManager.sprites1x1.Count);
@@ -32,5 +31,17 @@ public class IconManager : MonoBehaviour
         return iconManager.sprites1x1[rnd];
     }
 
+    public static Sprite GetRandomSprite1x2()
+    {
+        int rnd = Random.Range(0, iconManager.sprites1x2.Count);
 
+        return iconManager.sprites1x2[rnd];
+    }
+
+    public static Sprite GetRandomSprite2x1()
+    {
+        int rnd = Random.Range(0, iconManager.sprites2x1.Count);
+
+        return iconManager.sprites2x1[rnd];
+    }
 }
